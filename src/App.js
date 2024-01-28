@@ -2,10 +2,10 @@ import { BrowserRouter, Route, Routes } from "react-router-dom";
 import "./App.css";
 import Navbar from "./components/navbar/Navbar";
 import Cart from "./pages/Cart";
+import LoginSignUp from "./pages/LoginSignUp";
 import Product from "./pages/Product";
 import Shop from "./pages/Shop";
 import ShopCategory from "./pages/ShopCategory";
-import LoginSignUp from "./pages/LoginSignUp";
 
 function App() {
   return (
