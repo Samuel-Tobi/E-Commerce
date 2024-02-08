@@ -3,6 +3,7 @@ import { useParams } from "react-router-dom";
 import { ShopContext } from "../context/ShopContext";
 import "./CSS/product.css";
 import Breadcrum from "../components/breadcrum/Breadcrum";
+import ProductDisplay from "../components/productDisplay/ProductDisplay";
 
 function Product() {
   const { allProducts } = useContext(ShopContext);
@@ -12,6 +13,7 @@ function Product() {
   return (
     <div className="product">
       <Breadcrum product={product} />
+      <ProductDisplay product={product} />
     </div>
   );
 }
