@@ -4,6 +4,7 @@ import { ShopContext } from "../context/ShopContext";
 import "./CSS/product.css";
 import Breadcrum from "../components/breadcrum/Breadcrum";
 import ProductDisplay from "../components/productDisplay/ProductDisplay";
+import DescriptionBox from "../components/descriptionBox/DescriptionBox";
 
 function Product() {
   const { allProducts } = useContext(ShopContext);
@@ -14,6 +15,7 @@ function Product() {
     <div className="product">
       <Breadcrum product={product} />
       <ProductDisplay product={product} />
+      <DescriptionBox />
     </div>
   );
 }
